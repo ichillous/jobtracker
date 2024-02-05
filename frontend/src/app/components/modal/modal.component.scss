@@ -1,9 +1,4 @@
 
-.modal-button {
-    display: flex;
-    justify-content: center;
-}
-
 
 .modal-header {
     display: flex;
@@ -19,12 +14,6 @@
     margin: 0;
 }
 
-.btn-close {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
 .modal-body {
     padding: 1rem;
 }
@@ -33,19 +22,8 @@
     margin-bottom: 1rem;
 }
 
-.form-group {
-    margin-bottom: 1rem;
-}
-
 .control-label {
     font-weight: bold;
-}
-
-.form-control {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 textarea.form-control {
