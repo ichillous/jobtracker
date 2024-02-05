@@ -1,0 +1,138 @@
+<ng-container *ngIf="display$ | async as display">
+  <div class="form-button">
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-outline-dark"
+        [class.open]="display === 'open'"
+        (click)="open()"
+      >
+        Add
+      </button>
+      <section [class.open]="display === 'open'" (click)="close()">
+        <div (click)="$event.stopPropagation()">
+          <div class="modal-header">
+            <h4 class="modal-title">Add Job</h4>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="jobForm" class="form-modal" >
+              <div class="form-group">
+                <label class="control-label" for="jobTitle">Job Title:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="jobTitle"
+                  name="jobTitle"
+                  placeholder="Enter job title"
+                  required
+                  formControlName="jobTitle"
+                  />
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="company">Company:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="company"
+                  name="company"
+                  placeholder="Enter company"
+                  required
+                  formControlName="company"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="location">Location:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="location"
+                  name="location"
+                  placeholder="Enter location"
+                  required
+                  formControlName="location"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="description"
+                  >Description:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="description"
+                  name="description"
+                  placeholder="Enter description"
+                  required
+                  formControlName="description"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="interviews"
+                  >Number of Interviews:</label
+                >
+                <select
+                  class="form-control"
+                  id="interviews"
+                  name="interviews"
+                  required
+                  formControlName="numberOfInterviews"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="jobOfferBool"
+                  >Job Offer Received:</label
+                >
+                <input type="checkbox" id="jobOfferBool" name="jobOfferBool" formControlName="jobOfferBool" />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="applicationDate"
+                  >Application Date:</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="applicationDate"
+                  name="applicationDate"
+                  required
+                  formControlName="applicationDate"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="control-label" for="jobOffer">Hire Date:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="jobOfferDate"
+                  name="jobOfferDate"
+                  formControlName="jobOfferDate"
+                />
+              </div>
+            </form>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            [class.close]="display === 'close'"
+            (click)="close()"
+          >
+            Cancel
+          </button>
+          <button type="button" class="btn btn-primary" (click)="addJob()">
+            Submit
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+</ng-container>
