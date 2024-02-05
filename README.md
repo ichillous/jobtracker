@@ -30,9 +30,11 @@ npm install express morgan mongoose cors
 This will start the Node/Express backend on port 3000.
 
 #### Run Angular
-cd into frontend
+Exit backend directory then cd into frontend
 ```..cd ``` then ``` cd frontend```
+
 ``` npm install```
+
 ``` npm start ```
 
 Angular frontend will run on port 4200.
