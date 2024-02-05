@@ -14,6 +14,10 @@ This is a single page job tracking app built with Angular, Node.js and MongoDB.
 - Stores data in MongoDB database
 
 ### Usage
+CD into backend folder
+```
+cd backend 
+```
 Install
 
 ```
@@ -26,7 +30,9 @@ npm install express morgan mongoose cors
 This will start the Node/Express backend on port 3000.
 
 #### Run Angular
-
+cd into frontend
+```..cd ``` then ``` cd frontend```
+``` npm install```
 ``` npm start ```
 
 Angular frontend will run on port 4200.
