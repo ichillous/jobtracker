@@ -29,9 +29,6 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
             "scripts": [
               "node_modules/chart.js/dist/chart.js"
             ],
@@ -58,7 +55,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
               "sourceMap": true
             }
@@ -97,7 +94,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              
             ],
             "scripts": []
           }
