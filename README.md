@@ -40,10 +40,10 @@ Exit backend directory then cd into frontend
 Angular frontend will run on port 4200.
 
 #### MongoDB
-Database is hosted on MongoDB Atlas. URI is configured in server.js.
+Database is hosted on MongoDB Atlas. URI is configured in app.js.
 
 ### Code Overview
-backend/server.js - Node/Express code
+backend/app.js - Node/Express code
 backend/models - MongoDB models
 frontend/src/app - Angular components
 frontend/src/app/shared - Angular services & models

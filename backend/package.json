@@ -1,7 +1,7 @@
 {
   "name": "jobtracker",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "app.js",
   "author": "Isiah Chillous",
   "license": "MIT",
   "dependencies": {
@@ -27,8 +27,8 @@
   },
   "scripts": {
     "server": "concurrently \"ng serve\" \"server/node_modules/.bin/ts-node-dev server/server.ts\"",
-    "start": "node server.js",
-    "dev": "nodemon src/server.js -e js"
+    "start": "node app.js",
+    "dev": "nodemon src/app.js -e js"
   },
   "keywords": [],
   "description": ""
