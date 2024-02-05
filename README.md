@@ -17,7 +17,7 @@ This is a single page job tracking app built with Angular, Node.js and MongoDB.
 Install
 
 ```
-npm install
+npm install express morgan mongoose cors
 ```
 #### Run Server
 
